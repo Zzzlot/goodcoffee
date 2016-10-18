@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.css"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!--Header-->
+<header>
+	<div class="logo"><img src="images/logo.png" alt="good coffee indonesia"></div>
+	<nav>
+		<a href="#" onclick="openNav()" class="waves-effect waves-light"><img src="images/menu-button.png" alt="menu good coffee indonesia"></a>
+		<a href="#" onclick="openSearch()" class="waves-effect waves-light"><img src="images/search.png" alt="search good coffee indonesia"></a>
+    <a href="#" class="waves-effect waves-light"><img src="images/up.png" alt="menu good coffee indonesia"></a>
+	</nav>
+</header>
+<!--/Header-->
+
+<!--Slide-->
+<section class="fotorama"
+     data-fit="cover" 
+     data-autoplay="true"  
+     data-transition="crossfade" 
+     data-clicktransition="crossfade">
+  <img src="images/3.jpg">
+  <img src="images/1.jpg">
+  <img src="images/2.jpg">
+</section>
+<!--/Slide-->
+
+<!--Products-->
+<section class="products">
+  
+</section>
+<!--/Products-->
+
+
+<!--overlay-->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<div id="mySearch" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+  <div class="overlay-content">
+    <input type="text" name="search" class="search" placeholder="Search">
+  </div>
+ </div> 
+<!--/overlay-->
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.5.2/fotorama.js"></script> 
+<script type="text/javascript">
+function openNav() {document.getElementById("myNav").style.height = "100%";}
+function closeNav() {document.getElementById("myNav").style.height = "0%";}
+function openSearch() {document.getElementById("mySearch").style.height = "100%";}
+function closeSearch() {document.getElementById("mySearch").style.height = "0%";}
+</script>
+</body>
+</html>
