@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'Hoefler';
+    src: url(hoefler.ttf);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+* {
+    -moz-osx-font-smoothing: grayscale;
+}
+::selection {
+    background-color: #f0cb33;
+    color: #181818;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: greyscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: width;
+    -moz-transition-property: width;
+    transition-property: width;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;
+    background-color: #fff;
+}
+
+
+header{
+    width: 100%;
+    overflow: visible;
+    position: absolute;
+    z-index: 103;
+    top: 0;
+    left: 0;
+    height: 108px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: height;
+    -moz-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: 250ms;
+    -moz-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;    
+}
+
+.logo{
+    width: 130px;
+    float: left;
+    height: 100%;
+    position: relative;
+    margin-left: 39px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;    
+}
+
+nav{
+    float: right;
+    width: auto;
+    height: 100%;    
+}
+
+nav a{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 0.125s;
+    -moz-transition-duration: 0.125s;
+    transition-duration: 0.125s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;    
+}
+
+nav a:first-of-type{background-color: #3d3d3d;}
+nav a:nth-of-type(2) {background-color: #2d2d2d;}
+nav a:nth-of-type(3) {background-color: #1d1d1d;}
+nav a:hover{background-color: #8f7c4f;}
+nav a{
+    position: relative;
+    width: 108px;
+    float: left;
+    height: 100%;
+    text-align: center;    
+}
+nav a{
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex !important;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;    
+}
+
+a {
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.logo {
+    width: 130px;
+    float: left;
+    height: 100%;
+    position: relative;
+    margin-left: 39px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav a img {
+    margin: 0 auto;
+}
+
+.products{padding: 50px 0;}
+.search{width: 50% !important;color: #9e9e9e;}
+.search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #9e9e9e;
+}
+.search::-moz-placeholder { /* Firefox 19+ */
+  color: #9e9e9e;
+}
+.search:-ms-input-placeholder { /* IE 10+ */
+  color: #9e9e9e;
+}
+.search:-moz-placeholder { /* Firefox 18- */
+  color: #9e9e9e;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #8f7c4f;
+    box-shadow: 0 1px 0 0 #8f7c4f;
+    color: #8f7c4f;
+}
+
+/*overlay*/
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#myNav{font-family: 'Hoefler';}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
